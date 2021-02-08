@@ -56,12 +56,14 @@ def date_change(date,offset):
 
     else:
         final_hour = new_hour
+        new_day = day
         new_month = month
         new_year = year
         print("no date change")
     return final_hour,new_day, new_month, new_year
 
 def day_ahead():
+    # intented to reduce de code on the date_change function
     pass
 
 def days_back(month,year):
@@ -76,19 +78,7 @@ def days_back(month,year):
 
 def leap_year(year):
     #year = Which year do you want to check?
-    '''
-    if year%400 == 0:
-        print("Leap year.")
-        return True
-    elif year%100 == 0: 
-        print("Not leap year.")
-        return False
-    elif year%4 == 0:
-        print("Leap year.")
-        return 
-    else:
-        print("Not leap year.")
-'''
+
     if year % 4 == 0:
         if year % 100 == 0:
             if year % 400 == 0:
@@ -117,6 +107,7 @@ def format_input(date_time):
 # initial data
 time_date_start = "31/12/2019 17:30"
 time_zone_to_end = "CST"
+# the above variables to change to play with the program
 time_zone_offset = {"ET":-5, "CT":-6, "MT":-7, "PT":-8, "CST":8, "BST":1}
 day_back = {1:31, 2:31, 3:28, 4:31, 5:30, 6:31, 7:30, 8:31, 9:31, 10:30, 11:31, 12:30}
 # offset from the dictionary
