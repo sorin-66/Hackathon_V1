@@ -7,10 +7,10 @@ print these to screen. There should be at least 4x lecturers and 4x modules.
 '''
 
 modules = {
-    "French":{"code":1, "title":"Learn french","hours":10,"Teacher":"Monsieur Rovet"},
-    "German":{"code":2, "title":"Learn german","hours":15,"Teacher":"Fur Elize"},
+    "French":{"code":1, "title":"Learn French","hours":10,"Teacher":"Monsieur Rovet"},
+    "German":{"code":2, "title":"Learn German","hours":15,"Teacher":"Fur Elize"},
     "Spanish":{"code":3, "title":"Learn Spanish","hours":20,"Teacher":"Senor Sanchez"},
-    "Japanese":{"code":4, "title":"Learn Italian","hours":22,"Teacher":"Hirohito san"}
+    "Japanese":{"code":4, "title":"Learn Japanese","hours":22,"Teacher":"Hirohito san"}
     }
 
 lecturer = {
